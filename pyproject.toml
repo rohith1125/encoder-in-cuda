@@ -1,0 +1,16 @@
+[project]
+name = "encoder-in-cuda"
+version = "1.0.0"
+description = "Transformer Encoder Block from scratch — pure Python + NumPy, every op hand-written with CUDA kernel mapping"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "Sai Rohith Tanuku" }]
+dependencies = ["numpy"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+bench = ["torch"]
+viz = ["matplotlib"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
